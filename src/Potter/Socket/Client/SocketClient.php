@@ -12,10 +12,13 @@ use \Potter\Socket\Aware\{SocketAwareInterface, SocketAwareTrait};
 
 final class SocketClient extends AbstractSocketServer implements AwareInterface, CloneableInterface, ContainerAwareInterface, SocketAwareInterface
 {
-    use AwareTrait, CloneableTrait, ContainerAwareTrait, SocketAwareTrait;
+    use AwareTrait, CloneableTrait, ContainerAwareTrait, SocketAwareTrait, SocketClientTrait;
     
     public function __construct(ContainerInterface $container)
     {
         $this->setContainer($container);
+        $link = $container->get('link');
+        $attributes = $link->getAttributes();
+        $this->bindSocket($link->getHref(), array_key_exists('port', $attributes) ? $attributes['port'] : null);
     }
 }
