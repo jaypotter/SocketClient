@@ -19,6 +19,6 @@ final class SocketClient extends AbstractSocketClient implements AwareInterface,
         $this->setContainer($container);
         $link = $container->get('link');
         $attributes = $link->getAttributes();
-        //$this->bindSocket($link->getHref(), array_key_exists('port', $attributes) ? $attributes['port'] : null);
+        $this->connectSocket($link->getHref(), array_key_exists('port', $attributes) ? $attributes['port'] : null);
     }
 }
