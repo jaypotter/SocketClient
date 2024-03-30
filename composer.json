@@ -5,7 +5,8 @@
     "require": {
         "php": "^8.3",
         "potter/socket-client-interface": "dev-main",
-        "potter/aware": "dev-main"
+        "potter/aware": "dev-main",
+        "potter/cloneable": "dev-main"
     },
     "suggest": {
         "potter/socket": "dev-main",
