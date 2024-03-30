@@ -7,6 +7,7 @@
         "potter/socket-client-interface": "dev-main"
     },
     "suggest": {
+        "potter/socket": "dev-main",
         "potter/components": "dev-main",
         "potter/framework": "dev-main"
     },
