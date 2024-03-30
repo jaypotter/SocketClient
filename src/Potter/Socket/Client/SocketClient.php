@@ -10,7 +10,7 @@ use \Potter\Container\ContainerInterface;
 use \Potter\Container\Aware\{ContainerAwareInterface, ContainerAwareTrait};
 use \Potter\Socket\Aware\{SocketAwareInterface, SocketAwareTrait};
 
-final class SocketClient extends AbstractSocketServer implements AwareInterface, CloneableInterface, ContainerAwareInterface, SocketAwareInterface
+final class SocketClient extends AbstractSocketClient implements AwareInterface, CloneableInterface, ContainerAwareInterface, SocketAwareInterface
 {
     use AwareTrait, CloneableTrait, ContainerAwareTrait, SocketAwareTrait, SocketClientTrait;
     
