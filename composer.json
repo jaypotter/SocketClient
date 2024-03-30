@@ -7,7 +7,8 @@
         "potter/socket-client-interface": "dev-main",
         "potter/aware": "dev-main",
         "potter/cloneable": "dev-main",
-        "potter/container": "dev-main"
+        "potter/container": "dev-main",
+        "potter/socket-aware": "dev-main"
     },
     "suggest": {
         "potter/socket": "dev-main",
