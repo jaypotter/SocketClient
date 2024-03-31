@@ -9,7 +9,6 @@
         "potter/aware": "dev-main",
         "potter/cloneable": "dev-main",
         "potter/container": "dev-main",
-        "potter/emitter-interface": "dev-main",
         "potter/socket-aware": "dev-main"
     },
     "suggest": {
